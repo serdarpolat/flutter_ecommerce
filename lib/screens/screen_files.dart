@@ -1,3 +1,4 @@
+export 'root.dart';
 export 'splash/splash.dart';
 export 'auth/login.dart';
 export 'auth/register.dart';
@@ -6,3 +7,6 @@ export 'home/widgets/page_header.dart';
 export 'home/widgets/list_header.dart';
 export 'home/widgets/search_layout.dart';
 export 'home/widgets/category_layout.dart';
+export 'home/widgets/promo_widget.dart';
+export 'home/widgets/promo_layout.dart';
+export 'home/widgets/trends_layout.dart';

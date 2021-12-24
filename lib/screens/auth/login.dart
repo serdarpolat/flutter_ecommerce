@@ -148,7 +148,7 @@ class Login extends StatelessWidget {
                           height: hh(context, 145),
                         ),
                         CustomButton(
-                          onTap: () => push(context, Home()),
+                          onTap: () => push(context, Root()),
                           width: w(context),
                           title: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
