@@ -1,6 +1,7 @@
 import 'package:carry/core/core_files.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:provider/provider.dart';
 
 class CategoryIcon extends StatelessWidget {
   const CategoryIcon({
@@ -16,7 +17,10 @@ class CategoryIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: () {
+        final prov = Provider.of<BottomBarProvider>(context, listen: false);
+        prov.changePage(1);
+      },
       child: Container(
         width: ww(context, 115),
         height: hh(context, 122),

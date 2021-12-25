@@ -8,3 +8,5 @@ export 'models/category_icon_model.dart';
 export 'models/promo_model.dart';
 export 'models/bottom_icon_model.dart';
 export 'providers/bottom_bar_provider.dart';
+export 'providers/category_provider.dart';
+export 'models/product_model.dart';

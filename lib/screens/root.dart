@@ -14,7 +14,7 @@ class Root extends StatelessWidget {
         child: Consumer(builder: (context, BottomBarProvider prov, child) {
           return Stack(
             children: [
-              Home(),
+              pages[prov.page],
               Positioned(
                 bottom: 0,
                 left: 0,
@@ -45,3 +45,11 @@ class Root extends StatelessWidget {
     );
   }
 }
+
+List<Widget> pages = [
+  Home(),
+  Discover(),
+  Coupon(),
+  Cart(),
+  Profile(),
+];

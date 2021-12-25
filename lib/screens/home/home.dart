@@ -55,7 +55,7 @@ class Home extends StatelessWidget {
               items: trends.sublist(3, trends.length),
             ),
             SizedBox(
-              height: hh(context, 80),
+              height: hh(context, 88),
             ),
           ],
         ),

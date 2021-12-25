@@ -171,7 +171,7 @@ class Register extends StatelessWidget {
                           height: hh(context, 81),
                         ),
                         CustomButton(
-                          onTap: () => push(context, Root()),
+                          onTap: () => pushReplace(context, Root()),
                           width: w(context),
                           title: Row(
                             mainAxisAlignment: MainAxisAlignment.center,

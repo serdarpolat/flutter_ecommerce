@@ -11,7 +11,7 @@ class Categories extends StatelessWidget {
     return Scaffold(
       backgroundColor: Clr.bg,
       appBar: AppBar(
-        backgroundColor: Clr.white,
+        backgroundColor: Clr.bg,
         elevation: 0,
         centerTitle: false,
         actions: [
@@ -88,45 +88,6 @@ class Categories extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class CategoryItem extends StatelessWidget {
-  const CategoryItem({
-    Key? key,
-    required this.item,
-  }) : super(key: key);
-  final CategoryIconModel item;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: ww(context, 154),
-      height: ww(context, 154),
-      decoration: BoxDecoration(
-        color: Clr.white,
-        borderRadius: BorderRadius.circular(ww(context, 5)),
-      ),
-      padding: EdgeInsets.all(ww(context, 20)),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          SizedBox(
-            child: SvgPicture.asset(
-              item.icon,
-            ),
-          ),
-          Text(
-            item.title,
-            style: TextStyle(
-              fontSize: hh(context, 9),
-              fontWeight: FontWeight.w600,
-              color: Clr.black,
-            ),
-          ),
-        ],
       ),
     );
   }
