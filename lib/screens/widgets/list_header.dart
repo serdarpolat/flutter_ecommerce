@@ -5,8 +5,10 @@ class ListHeader extends StatelessWidget {
   const ListHeader({
     Key? key,
     required this.title,
+    this.onTap,
   }) : super(key: key);
   final String title;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class ListHeader extends StatelessWidget {
             ),
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: onTap,
             child: Row(
               children: [
                 Text(

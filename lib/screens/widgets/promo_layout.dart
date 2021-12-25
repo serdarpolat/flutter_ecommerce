@@ -1,5 +1,5 @@
 import 'package:carry/core/core_files.dart';
-import 'package:carry/screens/home/widgets/promo_widget.dart';
+import 'package:carry/screens/screen_files.dart';
 import 'package:flutter/material.dart';
 
 class PromoLayout extends StatelessWidget {

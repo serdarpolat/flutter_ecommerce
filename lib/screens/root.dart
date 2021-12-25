@@ -1,8 +1,6 @@
 import 'package:carry/core/core_files.dart';
-import 'package:carry/screens/home/widgets/bottom_icon_widget.dart';
 import 'package:carry/screens/screen_files.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 class Root extends StatelessWidget {

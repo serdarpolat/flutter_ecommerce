@@ -36,7 +36,7 @@ class CategoryIcon extends StatelessWidget {
                 fontWeight: FontWeight.w600,
                 color: Clr.black,
               ),
-            )
+            ),
           ],
         ),
         decoration: BoxDecoration(

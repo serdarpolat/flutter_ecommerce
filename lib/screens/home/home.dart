@@ -26,6 +26,7 @@ class Home extends StatelessWidget {
             ),
             ListHeader(
               title: "Furniture Shop",
+              onTap: () => push(context, Categories()),
             ),
             CategoryLayout(),
             SizedBox(

@@ -1,5 +1,5 @@
 import 'package:carry/core/core_files.dart';
-import 'package:carry/screens/home/widgets/category_icon.dart';
+import 'package:carry/screens/screen_files.dart';
 import 'package:flutter/material.dart';
 
 class CategoryLayout extends StatelessWidget {
@@ -17,7 +17,7 @@ class CategoryLayout extends StatelessWidget {
         padding:
             EdgeInsets.only(left: ww(context, 24), bottom: hh(context, 10)),
         scrollDirection: Axis.horizontal,
-        itemCount: categoryIcons.length,
+        itemCount: 3,
         itemBuilder: (context, index) {
           var c = categoryIcons[index];
           return Padding(
