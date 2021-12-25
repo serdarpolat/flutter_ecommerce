@@ -1,6 +1,7 @@
 import 'package:carry/core/core_files.dart';
 import 'package:carry/screens/screen_files.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 class Root extends StatelessWidget {
@@ -37,6 +38,13 @@ class Root extends StatelessWidget {
                     }),
                   ),
                 ),
+              ),
+              AnimatedPositioned(
+                duration: Duration(milliseconds: 240),
+                top: prov.isOpenFilter ? 0 : -500,
+                left: 0,
+                right: 0,
+                child: FilterLayout(),
               ),
             ],
           );

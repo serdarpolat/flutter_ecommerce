@@ -8,4 +8,12 @@ class BottomBarProvider with ChangeNotifier {
     _page = i;
     notifyListeners();
   }
+
+  bool _isOpenFilter = false;
+  bool get isOpenFilter => _isOpenFilter;
+
+  toggleFilter() {
+    _isOpenFilter = !_isOpenFilter;
+    notifyListeners();
+  }
 }

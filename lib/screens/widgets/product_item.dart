@@ -16,7 +16,7 @@ class ProductItem extends StatelessWidget {
       color: Clr.white,
       borderRadius: BorderRadius.circular(5),
       child: InkWell(
-        onTap: () {},
+        onTap: onTap,
         borderRadius: BorderRadius.circular(5),
         child: Container(
           padding: EdgeInsets.all(ww(context, 10)),

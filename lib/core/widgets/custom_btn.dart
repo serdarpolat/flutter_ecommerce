@@ -8,11 +8,13 @@ class CustomButton extends StatelessWidget {
     this.onTap,
     this.bgColor,
     this.width,
+    this.elevation,
   }) : super(key: key);
   final Widget title;
   final Function()? onTap;
   final Color? bgColor;
   final double? width;
+  final double? elevation;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class CustomButton extends StatelessWidget {
           ww(context, 5),
         ),
       ),
-      elevation: 0,
+      elevation: elevation ?? 0,
       child: SizedBox(
         width: width,
         height: hh(context, 45),

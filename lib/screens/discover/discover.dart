@@ -46,123 +46,7 @@ class Discover extends StatelessWidget {
                 SizedBox(
                   height: hh(context, 20),
                 ),
-                DefaultPadding(
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Material(
-                          color: Clr.white,
-                          borderRadius: BorderRadius.circular(ww(context, 5)),
-                          child: InkWell(
-                            onTap: () {},
-                            borderRadius: BorderRadius.circular(ww(context, 5)),
-                            child: Container(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: ww(context, 19),
-                                vertical: hh(context, 10),
-                              ),
-                              height: hh(context, 44),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  SvgPicture.asset(
-                                    "assets/icons/Filter.svg",
-                                    color: Clr.accent,
-                                  ),
-                                  Text(
-                                    "Filter",
-                                    style: TextStyle(
-                                      color: Clr.accent,
-                                      fontSize: hh(context, 16),
-                                      fontWeight: FontWeight.w300,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: ww(context, 14),
-                      ),
-                      Expanded(
-                        child: Material(
-                          color: Clr.white,
-                          borderRadius: BorderRadius.circular(ww(context, 5)),
-                          child: InkWell(
-                            onTap: () {},
-                            borderRadius: BorderRadius.circular(ww(context, 5)),
-                            child: Container(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: ww(context, 19),
-                                vertical: hh(context, 10),
-                              ),
-                              height: hh(context, 44),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  SvgPicture.asset(
-                                    "assets/icons/Filter.svg",
-                                    color: Clr.black,
-                                  ),
-                                  Text(
-                                    "Sort",
-                                    style: TextStyle(
-                                      color: Clr.black,
-                                      fontSize: hh(context, 16),
-                                      fontWeight: FontWeight.w300,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: ww(context, 14),
-                      ),
-                      Expanded(
-                        child: Material(
-                          color: Clr.white,
-                          borderRadius: BorderRadius.circular(ww(context, 5)),
-                          child: InkWell(
-                            onTap: () {},
-                            borderRadius: BorderRadius.circular(ww(context, 5)),
-                            child: Container(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: ww(context, 19),
-                                vertical: hh(context, 10),
-                              ),
-                              height: hh(context, 44),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  SvgPicture.asset(
-                                    "assets/icons/Filter.svg",
-                                    color: Clr.black,
-                                  ),
-                                  Text(
-                                    "List",
-                                    style: TextStyle(
-                                      color: Clr.black,
-                                      fontSize: hh(context, 16),
-                                      fontWeight: FontWeight.w300,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                FilterAndSort(),
                 SizedBox(
                   height: ww(context, 20),
                 ),
@@ -182,6 +66,10 @@ class Discover extends StatelessWidget {
 
                     return ProductItem(
                       item: p,
+                      onTap: () => push(
+                        context,
+                        ProductDetail(item: p),
+                      ),
                     );
                   },
                 ),

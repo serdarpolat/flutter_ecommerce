@@ -19,3 +19,6 @@ export 'widgets/bottom_icon_widget.dart';
 export 'widgets/category_icon.dart';
 export 'widgets/category_item.dart';
 export 'widgets/product_item.dart';
+export 'widgets/filter_and_sort.dart';
+export 'widgets/filter_layout.dart';
+export 'product_detail/product_detail.dart';
